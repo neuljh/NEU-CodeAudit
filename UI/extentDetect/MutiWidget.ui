@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MutiWidget</class>
+ <widget class="QWidget" name="MutiWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>820</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>501</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>499</width>
+      <height>549</height>
+     </rect>
+    </property>
+    <widget class="NewCodeEditor" name="CodeEditor">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>511</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+	background-color: #ffffff
+}</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QTabWidget" name="detectWidget">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>50</y>
+     <width>501</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="tabsClosable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>开始</string>
+    </attribute>
+    <widget class="detectMenuButton" name="pb_detect_start">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>350</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton::menu {
+    font-size: 14px;
+}</string>
+     </property>
+     <property name="text">
+      <string>选择静态检测工具</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="picLable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>471</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    font-size: 30px; 
+	qproperty-alignment: AlignCenter;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>501</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pb_format">
+      <property name="styleSheet">
+       <string notr="true">QPushButton::menu {
+    font-size: 13px;
+}</string>
+      </property>
+      <property name="text">
+       <string>规范代码格式</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_compile">
+      <property name="styleSheet">
+       <string notr="true">QPushButton::menu {
+    font-size: 13px;
+}</string>
+      </property>
+      <property name="text">
+       <string>编译</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_run">
+      <property name="styleSheet">
+       <string notr="true">QPushButton::menu {
+    font-size: 13px;
+}</string>
+      </property>
+      <property name="text">
+       <string>运行</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="detectMenuButton" name="pb_detect">
+      <property name="styleSheet">
+       <string notr="true">QPushButton::menu {
+    font-size: 13px;
+}</string>
+      </property>
+      <property name="text">
+       <string>静态检测</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ProjectMenuButton" name="pushButton">
+      <property name="text">
+       <string>项目</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="LogAndCmd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>620</y>
+     <width>1021</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Log Information</string>
+    </attribute>
+    <widget class="QScrollArea" name="scrollArea_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1021</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1019</width>
+        <height>149</height>
+       </rect>
+      </property>
+      <widget class="QTextEdit" name="te_log">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1011</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>CMD</string>
+    </attribute>
+    <widget class="QScrollArea" name="scrollArea_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1021</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1019</width>
+        <height>139</height>
+       </rect>
+      </property>
+      <widget class="CmdTextEdit" name="te_cmd">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1021</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_generate_2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>20</y>
+     <width>161</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton::menu {
+    font-size: 13px;
+}</string>
+   </property>
+   <property name="text">
+    <string>生成审计报告</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NewCodeEditor</class>
+   <extends>QTextEdit</extends>
+   <header location="global">UI.ToolWidget.NewCodeEditor</header>
+  </customwidget>
+  <customwidget>
+   <class>detectMenuButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">UI.ToolWidget.detectMenuButton</header>
+  </customwidget>
+  <customwidget>
+   <class>CmdTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header location="global">UI.ToolWidget.CmdTextEditor</header>
+  </customwidget>
+  <customwidget>
+   <class>ProjectMenuButton</class>
+   <extends>QPushButton</extends>
+   <header>ProjectMenuButton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

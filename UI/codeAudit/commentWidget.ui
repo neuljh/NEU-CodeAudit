@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>comment</class>
+ <widget class="QWidget" name="comment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTableWidget {
+                font-size: 16px;
+                border: 2px solid 98afda; /* 边框为深蓝色 */
+            }
+            QTableWidget::item {
+                text-align: center; /* 内容居中显示 */
+                padding: 5px;
+            }
+            QTableWidget::item:odd {
+                background-color: #aec1e3; /* 单行蓝色 */
+                color: white;
+            }
+            QTableWidget::item:even {
+                background-color: white; /* 双行白色 */
+            }</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>511</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>509</width>
+      <height>679</height>
+     </rect>
+    </property>
+    <widget class="NewCodeEditor" name="commentCodeEditor">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>511</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+	background-color: #ffffff
+}</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>40</y>
+     <width>441</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QScrollArea" name="scrollArea_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>401</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>399</width>
+        <height>559</height>
+       </rect>
+      </property>
+      <widget class="QTableView" name="ShowDefineTableView">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>401</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+                font-size: 16px;
+                border: 2px solid 98afda; /* 边框为深蓝色 */
+            }
+            QTableWidget::item {
+                text-align: center; /* 内容居中显示 */
+                padding: 5px;
+            }
+            QTableWidget::item:odd {
+                background-color: #aec1e3; /* 单行蓝色 */
+                color: white;
+            }
+            QTableWidget::item:even {
+                background-color: white; /* 双行白色 */
+            }</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="ShowTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>600</y>
+       <width>401</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QScrollArea" name="scrollArea_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>401</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>399</width>
+        <height>559</height>
+       </rect>
+      </property>
+      <widget class="QTableView" name="ShowRiskFunctionTableView">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>401</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+                font-size: 16px;
+                border: 2px solid 98afda; /* 边框为深蓝色 */
+            }
+            QTableWidget::item {
+                text-align: center; /* 内容居中显示 */
+                padding: 5px;
+            }
+            QTableWidget::item:odd {
+                background-color: #aec1e3; /* 单行蓝色 */
+                color: white;
+            }
+            QTableWidget::item:even {
+                background-color: white; /* 双行白色 */
+            }</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="RiskFunctionShowTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>600</y>
+       <width>401</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="FunctionPushButton">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>20</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>函数关系树列表</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RiskFunctionPushButton">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>20</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>风险函数列表</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>720</y>
+     <width>941</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>939</width>
+      <height>59</height>
+     </rect>
+    </property>
+    <widget class="QTextEdit" name="FunctionMesShowTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>941</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NewCodeEditor</class>
+   <extends>QTextEdit</extends>
+   <header location="global">UI.ToolWidget.NewCodeEditor</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

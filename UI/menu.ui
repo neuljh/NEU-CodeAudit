@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QWidget" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1487</width>
+    <height>869</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    font-size: 16px;
+}
+QLabel {
+    font-size: 15px; 
+}
+
+/* 设置ComboBox字体大小为16 */
+QComboBox {
+    font-size: 16px;
+}
+
+/* 设置PushButton中设定的菜单字体大小为16 */
+QPushButton::menu {
+    font-size: 16px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>131</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="ExitPushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Page3pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>扩展应用</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Page2pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>审计管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Page1pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>220</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>代码审计</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLable">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>4</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="ChangeStackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>9</y>
+     <width>1321</width>
+     <height>841</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-size: 16px;
+}
+QLabel {
+    font-size: 15px; 
+}
+
+/* 设置ComboBox字体大小为16 */
+QComboBox {
+    font-size: 16px;
+}
+
+/* 设置PushButton中设定的菜单字体大小为16 */
+QPushButton::menu {
+    font-size: 16px;
+}
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page1"/>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="picLable2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>1231</width>
+       <height>671</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page2"/>
+   <widget class="QWidget" name="page3"/>
+  </widget>
+  <widget class="QPushButton" name="HidePushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>820</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

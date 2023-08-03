@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'main.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_codeAudit(object):
+    def setupUi(self, codeAudit):
+        codeAudit.setObjectName("codeAudit")
+        codeAudit.resize(1322, 879)
+        self.centralwidget = QtWidgets.QWidget(codeAudit)
+        self.centralwidget.setObjectName("centralwidget")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setGeometry(QtCore.QRect(10, 0, 281, 821))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 279, 819))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.treeView = QtWidgets.QTreeView(self.scrollAreaWidgetContents)
+        self.treeView.setGeometry(QtCore.QRect(0, 40, 281, 781))
+        self.treeView.setObjectName("treeView")
+        self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label.setGeometry(QtCore.QRect(10, 10, 241, 16))
+        self.label.setObjectName("label")
+        self.ChooseComboBox = QtWidgets.QComboBox(self.scrollAreaWidgetContents)
+        self.ChooseComboBox.setGeometry(QtCore.QRect(130, 10, 111, 22))
+        self.ChooseComboBox.setObjectName("ChooseComboBox")
+        self.ChooseComboBox.addItem("")
+        self.ChooseComboBox.addItem("")
+        self.ChooseComboBox.addItem("")
+        self.ChooseComboBox.addItem("")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.commentTabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.commentTabWidget.setGeometry(QtCore.QRect(330, 0, 971, 821))
+        self.commentTabWidget.setTabsClosable(True)
+        self.commentTabWidget.setMovable(True)
+        self.commentTabWidget.setObjectName("commentTabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setAcceptDrops(False)
+        self.tab.setObjectName("tab")
+        self.commentTabWidget.addTab(self.tab, "")
+        codeAudit.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(codeAudit)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1322, 26))
+        self.menubar.setObjectName("menubar")
+        self.fileMenu = QtWidgets.QMenu(self.menubar)
+        self.fileMenu.setObjectName("fileMenu")
+        codeAudit.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(codeAudit)
+        self.statusbar.setObjectName("statusbar")
+        codeAudit.setStatusBar(self.statusbar)
+        self.openAction = QtWidgets.QAction(codeAudit)
+        self.openAction.setObjectName("openAction")
+        self.saveAction = QtWidgets.QAction(codeAudit)
+        self.saveAction.setObjectName("saveAction")
+        self.saveAsAction = QtWidgets.QAction(codeAudit)
+        self.saveAsAction.setObjectName("saveAsAction")
+        self.exitAction = QtWidgets.QAction(codeAudit)
+        self.exitAction.setObjectName("exitAction")
+        self.findAction = QtWidgets.QAction(codeAudit)
+        self.findAction.setObjectName("findAction")
+        self.fileMenu.addAction(self.openAction)
+        self.fileMenu.addAction(self.findAction)
+        self.fileMenu.addAction(self.saveAction)
+        self.fileMenu.addAction(self.saveAsAction)
+        self.fileMenu.addAction(self.exitAction)
+        self.menubar.addAction(self.fileMenu.menuAction())
+
+        self.retranslateUi(codeAudit)
+        self.commentTabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(codeAudit)
+
+    def retranslateUi(self, codeAudit):
+        _translate = QtCore.QCoreApplication.translate
+        codeAudit.setWindowTitle(_translate("codeAudit", "MainWindow"))
+        self.label.setText(_translate("codeAudit", "文件目录"))
+        self.ChooseComboBox.setItemText(0, _translate("codeAudit", "*"))
+        self.ChooseComboBox.setItemText(1, _translate("codeAudit", "*.c"))
+        self.ChooseComboBox.setItemText(2, _translate("codeAudit", "*.h"))
+        self.ChooseComboBox.setItemText(3, _translate("codeAudit", "*.c,*.h"))
+        self.commentTabWidget.setTabText(self.commentTabWidget.indexOf(self.tab), _translate("codeAudit", "Tab 1"))
+        self.fileMenu.setTitle(_translate("codeAudit", "文件"))
+        self.openAction.setText(_translate("codeAudit", "打开"))
+        self.saveAction.setText(_translate("codeAudit", "保存"))
+        self.saveAsAction.setText(_translate("codeAudit", "另存为"))
+        self.exitAction.setText(_translate("codeAudit", "退出"))
+        self.findAction.setText(_translate("codeAudit", "查找"))
+
